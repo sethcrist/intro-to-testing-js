@@ -64,3 +64,59 @@ describe('isFive', function () {
         expect(isFive("5")).toBe(true);
     });
 });
+
+
+describe('isVowel', function() {
+    it('should be a defined function', function () {
+        expect(typeof isVowel).toBe('function');
+    });
+    it('should return a boolean', function() {
+       expect(typeof isVowel()).toBe('boolean');
+    });
+    it('should return true when passed "a"', function() {
+        expect(isVowel("a")).toBe(true);
+    });
+    it('should return false when passed "y"', function() {
+        expect(isVowel("y")).toBe(false);
+    });
+    it('should return false when passed 4', function() {
+        expect(isVowel(4)).toBe(false);
+    });
+    it('should return true when passed the letter "A"', function() {
+        expect(isVowel("A")).toBe(true);
+    });
+    it('should return true when passed "e"', function() {
+        expect(isVowel("e")).toBe(true);
+    });
+    it('should return false if passed a boolean', function () {
+        //expect(isVowel(true)).toBe(true);
+        expect(isVowel(false)).toBe(false);
+    });
+    it('should return false if passed the string "banana"', function () {
+        expect(isVowel("banana")).toBe(false);
+    });
+    it('should return false if passed no input', function () {
+        expect(isVowel()).toBe(false);
+    });
+    it('should return true if passed "I"', function () {
+        expect(isVowel("I")).toBe(true);
+    });
+});
+
+ describe('add', function() {
+     it('should be a defined function', function () {
+         expect(typeof add).toBe('function');
+     });
+     it('should return 5', function () {
+         expect(add(5)).toBe(true);
+     });
+ });
+
+
+
+
+
+
+
+
+
